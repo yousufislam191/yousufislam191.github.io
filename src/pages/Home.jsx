@@ -3,6 +3,8 @@ import { ThemeProvider, styled } from "styled-components";
 import { darkTheme, lightTheme } from "../utils/Themes";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
+import Footer from "../components/Footer";
+import Skills from "../components/Skills";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -34,6 +36,10 @@ const Home = () => {
       <Navbar />
       <Body>
         <HeroSection />
+        <Wrapper>
+          <Skills />
+        </Wrapper>
+        <Footer />
       </Body>
     </ThemeProvider>
   );

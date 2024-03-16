@@ -6,7 +6,8 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 90px 0px;
+  padding: 70px 0px;
+  // height: 89vh;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -122,8 +123,8 @@ export const Title = styled.div`
   }
 
   @media (max-width: 640px) {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 40px;
     margin-bottom: 8px;
   }
 `;
@@ -139,7 +140,7 @@ export const TextLoop = styled.div`
     text-align: center;
   }
   @media (max-width: 640px) {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 48px;
     margin-bottom: 16px;
   }
@@ -161,8 +162,8 @@ export const SubTitle = styled.div`
   }
 
   @media (max-width: 640px) {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 14px;
+    line-height: 24px;
   }
 `;
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Nav,
   NavLink,
@@ -20,6 +20,7 @@ import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [activeLink, setActiveLink] = useState("about");
   // const theme = useTheme();
   return (
     <Nav>
@@ -45,11 +46,41 @@ const Navbar = () => {
           />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink
+            href="#about"
+            onClick={() => setActiveLink("about")}
+            isActive={activeLink === "about"}
+          >
+            About
+          </NavLink>
+          <NavLink
+            href="#skills"
+            onClick={() => setActiveLink("skills")}
+            isActive={activeLink === "skills"}
+          >
+            Skills
+          </NavLink>
+          <NavLink
+            href="#experience"
+            onClick={() => setActiveLink("experience")}
+            isActive={activeLink === "experience"}
+          >
+            Experience
+          </NavLink>
+          <NavLink
+            href="#projects"
+            onClick={() => setActiveLink("projects")}
+            isActive={activeLink === "projects"}
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            href="#education"
+            onClick={() => setActiveLink("education")}
+            isActive={activeLink === "education"}
+          >
+            Education
+          </NavLink>
         </NavItems>
         {/* <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
