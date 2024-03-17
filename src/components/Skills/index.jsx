@@ -38,8 +38,9 @@ export const Title = styled.div`
 
 export const Desc = styled.div`
   font-size: 18px;
+  font-weight: 600;
   text-align: center;
-  max-width: 600px;
+  max-width: 800px;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     font-size: 16px;
@@ -57,6 +58,7 @@ const SkillsContainer = styled.div`
 
 const Skill = styled.div`
   width: 100%;
+  height: 100%;
   max-width: 500px;
   background: ${({ theme }) => theme.card};
   border: 0.1px solid #854ce6;

@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -38,6 +39,7 @@ const Home = () => {
         <HeroSection />
         <Wrapper>
           <Skills />
+          <Experience />
         </Wrapper>
         <Footer />
       </Body>
