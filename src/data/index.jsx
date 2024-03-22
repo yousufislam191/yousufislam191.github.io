@@ -244,7 +244,7 @@ export const experiences = [
     img: "https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/422432046_315937988088962_130004831670759142_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8mNCRSL8y28AX_4Ul5j&_nc_ht=scontent.fdac24-3.fna&oh=00_AfCW9vJHuE143cX-YbQDoX4f4ck38FPDWrPAZlSvEUhg4g&oe=65FB6C1B",
     role: "Software Engineer",
     company: "Little Programmer",
-    date: "March 2024 - Present",
+    date: "Mar 2024 - Present",
     desc: "Working on the Backend team on Microservice Architecture. Here I review and update existing code; Test API endpoint, and add new features.",
     skills: [
       "Node.js",
@@ -262,8 +262,8 @@ export const experiences = [
     img: "https://scontent.fdac24-4.fna.fbcdn.net/v/t39.30808-6/306479497_491463272988901_8480637894357305947_n.png?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Dm0vviSYWTYAX9QdsLp&_nc_ht=scontent.fdac24-4.fna&oh=00_AfAZKM1Fvu2iMz9vCuDzGm8KvUlWn9izJuZiQ5TsrARgqw&oe=65FBD8E2",
     role: "Intern Digital Marketing",
     company: "Staff Asia LTD",
-    date: "January 2024 - February 2024",
-    // desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
+    date: "Jan 2024 - Feb 2024",
+    desc: "I wrote the content for EdTech products and learned the fundamentals of all digital marketing such as SEO, SMM, SEM, etc.",
   },
 ];
 
