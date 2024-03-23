@@ -1,5 +1,7 @@
 import CollegeLogo from "../assets/images/saarc.jpeg";
 import JameyaLogo from "../assets/images/jameya.jpg";
+import littleprogrammer from "../assets/images/littlesprogrammers.jpeg";
+import staffasia from "../assets/images/staffasia.png";
 
 export const Bio = {
   name: "Yousuf Islam",
@@ -244,7 +246,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/422432046_315937988088962_130004831670759142_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8mNCRSL8y28AX_4Ul5j&_nc_ht=scontent.fdac24-3.fna&oh=00_AfCW9vJHuE143cX-YbQDoX4f4ck38FPDWrPAZlSvEUhg4g&oe=65FB6C1B",
+    img: littleprogrammer,
     role: "Software Engineer",
     company: "Little Programmer",
     date: "Mar 2024 - Present",
@@ -262,7 +264,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://scontent.fdac24-4.fna.fbcdn.net/v/t39.30808-6/306479497_491463272988901_8480637894357305947_n.png?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Dm0vviSYWTYAX9QdsLp&_nc_ht=scontent.fdac24-4.fna&oh=00_AfAZKM1Fvu2iMz9vCuDzGm8KvUlWn9izJuZiQ5TsrARgqw&oe=65FBD8E2",
+    img: staffasia,
     role: "Intern Digital Marketing",
     company: "Staff Asia LTD",
     date: "Jan 2024 - Feb 2024",
