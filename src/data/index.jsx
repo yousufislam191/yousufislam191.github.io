@@ -1,3 +1,6 @@
+import CollegeLogo from "../assets/images/saarc.jpeg";
+import JameyaLogo from "../assets/images/jameya.jpg";
+
 export const Bio = {
   name: "Yousuf Islam",
   roles: ["Software Engineer", "Graphics & UI Designer", "ML Enthusiast"],
@@ -270,30 +273,30 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-    school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-    date: "Oct 2021 - Sep 2025",
+    img: "https://api.free-apply.com/img/logo/3be1ab13-6325-4487-bc56-100d2ba435df?w=150&h=150&fit=crop&s=268316de19b4171e7c20798a7df55bef",
+    school: "Leading University, Sylhet Bangladesh",
+    date: "2019 - 2022",
     grade: "8.71 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+    desc: "I have completed my Bachelor degree from the Department of CSE with a CGPA of 3.32",
+    degree: "Bachelor of Science - B.Sc, Computer Science and Engineering",
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2019 - Apr 2025",
+    img: CollegeLogo,
+    school: "SAARC International College, Sylhet Bangladesh",
+    date: "2016 - 2018",
     grade: "88.2%",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-    degree: "ISC(XII), Science with Computer",
+    desc: "I have completed my higher secondary education in 2018 from Science group.",
+    degree: "HSC, Higher Secondary Certificate",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2017 - Apr 2019",
+    img: JameyaLogo,
+    school: "Shahjalal Jameya Islamia Kamil M.A Madrasah, Sylhet Bangladesh",
+    date: "2005 - 2016",
     grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-    degree: "ICSC(X), Science with Computer",
+    desc: "I have completed my secondary education in 2016 from Science group.",
+    degree: "SSC, Secondary School Certificate",
   },
 ];
 

@@ -5,19 +5,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-const Skills = styled.div`
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  margin-top: -10px;
-`;
-
-const ItemWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-`;
-
 const Span = styled.span`
   overflow: hidden;
   display: -webkit-box;
@@ -27,19 +14,7 @@ const Span = styled.span`
   text-overflow: ellipsis;
 `;
 
-const Document = styled.img`
-  display: none;
-  height: 70px;
-  width: fit-content;
-  background-color: #000;
-  border-radius: 10px;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-`;
-
-const ExperienceCard = ({ experience }) => {
+const EducationCard = ({ education }) => {
   return (
     <Box sx={{ minWidth: 275 }}>
       <Card
@@ -49,6 +24,8 @@ const ExperienceCard = ({ experience }) => {
           backgroundColor: "#171721",
           borderRadius: "10px",
           border: "0.1px solid #306ee8",
+          height: "100%",
+          overflow: "visible",
           boxShadow: "rgba(23, 92, 230, 0.15) 0px 4px 24px",
         }}
       >
@@ -65,7 +42,7 @@ const ExperienceCard = ({ experience }) => {
               },
             }}
           >
-            {experience.role}
+            {education.school}
           </Typography>
 
           <Typography
@@ -78,7 +55,7 @@ const ExperienceCard = ({ experience }) => {
             }}
             gutterBottom
           >
-            {experience.company}
+            {education.degree}
           </Typography>
           <Typography
             sx={{
@@ -91,7 +68,7 @@ const ExperienceCard = ({ experience }) => {
             }}
             gutterBottom
           >
-            {experience.date}
+            {education.date}
           </Typography>
 
           <Typography
@@ -104,42 +81,12 @@ const ExperienceCard = ({ experience }) => {
               },
             }}
           >
-            {experience?.desc && <Span>{experience?.desc}</Span>}
-            {experience?.skills && (
-              <>
-                <br />
-                <Skills>
-                  <b>Skills:</b>
-                  <ItemWrapper>
-                    {experience?.skills?.map((skill, index) => (
-                      <Typography
-                        key={index}
-                        sx={{
-                          color: "#A09EAA",
-                          "@media only screen and (max-width: 768px)": {
-                            fontSize: "12px",
-                            lineHeight: "0.7rem",
-                          },
-                        }}
-                      >
-                        {index > 0 && " • "}
-                        {skill}
-                      </Typography>
-                    ))}
-                  </ItemWrapper>
-                </Skills>
-              </>
-            )}
+            {education?.desc && <Span>{education?.desc}</Span>}
           </Typography>
-          {experience.doc && (
-            <a href={experience.doc} target="new">
-              <Document src={experience.doc} />
-            </a>
-          )}
         </CardContent>
       </Card>
     </Box>
   );
 };
 
-export default ExperienceCard;
+export default EducationCard;

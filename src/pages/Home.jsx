@@ -6,6 +6,7 @@ import HeroSection from "../components/HeroSection";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
+import Education from "../components/Education";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -40,6 +41,7 @@ const Home = () => {
         <Wrapper>
           <Skills />
           <Experience />
+          <Education />
         </Wrapper>
         <Footer />
       </Body>

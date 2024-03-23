@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Bio } from "../../data";
+import CurrentMonthYear from "../Date";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -84,7 +85,10 @@ function Footer() {
             <Kaggle>K</Kaggle>
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Yousuf Islam. All rights reserved.</Copyright>
+        <Copyright>
+          &copy; 2024 -<CurrentMonthYear />
+          Yousuf Islam. All rights reserved.
+        </Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
