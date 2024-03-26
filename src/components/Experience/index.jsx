@@ -17,8 +17,12 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
+  padding: 70px 0px;
   @media (max-width: 960px) {
-    padding: 0px;
+    padding: 66px 16px;
+  }
+  @media (max-width: 640) {
+    padding: 32px 16px;
   }
 `;
 
@@ -53,19 +57,20 @@ export const Desc = styled.div`
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  max-width: 800px;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     font-size: 16px;
+    padding: 0rem 0.5rem;
   }
 `;
 
 const TimelineSection = styled.div`
-  width: 100%;
-  max-width: 1200px;
   margin-top: 10px;
-  @media only screen and (max-width: 767px) {
-    margin-left: -50px;
+  margin-left: -1rem;
+  @media (min-width: 768px) {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 0;
   }
 `;
 

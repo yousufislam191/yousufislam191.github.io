@@ -16,7 +16,22 @@ const Span = styled.span`
 
 const EducationCard = ({ education }) => {
   return (
-    <Box sx={{ minWidth: 275 }}>
+    <Box
+      sx={{
+        "@media (min-width: 320px)": {
+          minWidth: 250,
+        },
+        "@media (min-width: 375px)": {
+          minWidth: 300,
+        },
+        "@media (min-width: 414px)": {
+          minWidth: 335,
+        },
+        "@media (min-width: 428px)": {
+          minWidth: 350,
+        },
+      }}
+    >
       <Card
         variant="outlined"
         sx={{

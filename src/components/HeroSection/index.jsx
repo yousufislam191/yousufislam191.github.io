@@ -8,11 +8,10 @@ import {
   HeroRightContainer,
   HeroInnerContainer,
   TextLoop,
+  Hi,
   Title,
   Span,
   SubTitle,
-  //   SocialMediaIcons,
-  //   SocialMediaIcon,
   ResumeButton,
 } from "./HeroStyle";
 import Typewriter from "typewriter-effect";
@@ -27,9 +26,8 @@ const HeroSection = () => {
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
-            <Title>
-              Hi, I am <br /> {Bio.name}
-            </Title>
+            <Hi>Hi, I am</Hi> <br />
+            <Title>{Bio.name}</Title>
             <TextLoop>
               I am a
               <Span>

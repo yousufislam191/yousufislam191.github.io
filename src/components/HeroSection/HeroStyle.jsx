@@ -7,7 +7,6 @@ export const HeroContainer = styled.div`
   justify-content: center;
   position: relative;
   padding: 70px 0px;
-  // height: 89vh;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -126,6 +125,21 @@ export const Title = styled.div`
     font-size: 36px;
     line-height: 40px;
     margin-bottom: 8px;
+  }
+`;
+
+export const Hi = styled.div`
+  font-weight: 600;
+  font-size: 26px;
+  color: ${({ theme }) => theme.text_primary};
+  margin-bottom: -1.5rem;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+    margin-bottom: -1rem;
   }
 `;
 

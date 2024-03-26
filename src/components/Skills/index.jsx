@@ -8,7 +8,13 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 80px 0px 0px 0px;
+  padding: 70px 0px;
+  @media (max-width: 960px) {
+    padding: 66px 16px;
+  }
+  @media (max-width: 640) {
+    padding: 32px 16px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -41,10 +47,10 @@ export const Desc = styled.div`
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  max-width: 800px;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     font-size: 16px;
+    padding: 0rem 0.5rem;
   }
 `;
 
@@ -82,6 +88,9 @@ const SkillTitle = styled.h2`
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 20px;
   text-align: center;
+  @media (max-width: 960px) {
+    font-size: 20px;
+  }
 `;
 
 const SkillList = styled.div`
